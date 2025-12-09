@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
     <head>
         <title>Dynamic Bank - Home</title>
     </head>
@@ -7,7 +8,8 @@
         <h1>Dynamic Bank</h1>
     </body>
 
-    <a href="login">Login</a>
-    <a href="transfer-money">Transfer money</a>
+    <a th:href="@{/login}" sec:authorize="isAnonymous()">Login</a>
+    <a href="transfer-money" sec:authorize="isAuthenticated()">Transfer money</a>
+    <a href="logout" sec:authorize="isAuthenticated()">Logout</a>
 
 </html>

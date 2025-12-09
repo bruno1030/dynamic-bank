@@ -11,4 +11,9 @@ public class HomeController {
         return "home";
     }
 
+    @GetMapping("/logout")
+    public String logout(){
+        return "home";
+    }
+
 }
