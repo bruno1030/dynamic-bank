@@ -1,0 +1,46 @@
+##############################
+# Maven
+##############################
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+##############################
+# IntelliJ IDEA
+##############################
+.idea/
+*.iml
+*.iws
+out/
+
+##############################
+# Logs
+##############################
+*.log
+
+##############################
+# OS Files
+##############################
+.DS_Store
+Thumbs.db
+
+##############################
+# Spring Boot artifacts
+##############################
+/*.jar
+/*.war
+
+##############################
+# Application config
+src/main/resources/application.properties
+
+##############################
+# Others
+##############################
+*.class
